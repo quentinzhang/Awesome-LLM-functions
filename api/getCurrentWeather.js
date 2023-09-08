@@ -1,7 +1,7 @@
 const authorizeRequest = require('./utils/authorizeRequest');
 
 module.exports = async (req, res) => {
-  // 授权检查
+  // API Key checking
   if (!authorizeRequest(req, res)) {
     return;
   }
@@ -15,14 +15,13 @@ module.exports = async (req, res) => {
     return res.status(500).send('Axios is not initialized');
   }
 
-  const API_KEY = 'c1e8b6d31b4f1aef9cc499202e48b45d';
+  const OPEN_WEATHER_API_KEY = process.env.OPEN_WEATHER_API_KEY
 
   const { lat } = req.body || req.query;
   const { lon } = req.body || req.query;
   const { units = 'standard' } = req.body || req.query;
 
-  const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=${units}&appid=${API_KEY}`;
-  
+  const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=${units}&appid=${OPEN_WEATHER_API_KEY}`;
   try {
     const response = await axios.get(url);
     const data = response.data;
