@@ -7,7 +7,7 @@
 
 以下是具体步骤：
 
-1. 初始化配置
+### 1. 初始化配置
 从Github中将本项目克隆到本地，然后运行 ```npm install``` 安装必要的扩展。
 然后将 .env.example 文件 复制为 .env 文件，在其中用来存放项目相关的API Key等。
 ```
@@ -15,10 +15,10 @@ cp .env.example .env
 ```
 你还可以将 EXPECTED_API_KEY 的值换成任何自定义的字符串，用来设置函数的访问权限，你需要将 EXPECTED_API_KEY 的值填写到ConsoleOne工作台的函数调用设置中的
 
-1. 设置函数描述
+### 2. 设置函数描述
 以实现获取天气信息的函数 getCurrentWeather.js 为例，首先将与getCurrentWeather函数相关的复制并粘贴到ConsoleOne工作台的函数调用设置中。
 
-2. 发布函数
+### 3. 发布函数
 要想快速使用一个函数，最简单的方式是将函数发布到Vercel上，以下是具体的流程：
 
 全局安装Vercel：
