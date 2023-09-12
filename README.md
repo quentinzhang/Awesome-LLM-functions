@@ -1,50 +1,69 @@
-# OpenFunctions
+# Open-function Project for OpenAI
 
-## 目标
-这个项目旨在提供一个可供调用的实用函数集，可以实现一系列自己的功能函数，并与OpenAI的Function calling进行集成，通过这些功能函数对GPT的能力进行扩展，并通过ConsoleOne工作台方便的进行调试。
+[查看中文项目介绍](README-zh.md)
 
-## 使用现有的函数
+## Objective
+OpenAI's function calling provides unlimited possibilities for the expansion of LLM capabilities, but the complete implementation of function calling involves more than one model call, which is very difficult to debug.
 
-以下是具体步骤：
+This project aims to provide a collection of practical functions that can be called so that developers can implement and deploy their own functions in the most convenient way and debug function call effects using the [ConsoleOne AI Workbench](https://console.evalsone.com/).
 
-### 1. 初始化配置
-从Github中将本项目克隆到本地，然后运行 ```npm install``` 安装必要的扩展。
-然后将 .env.example 文件 复制为 .env 文件，在其中用来存放项目相关的API Key等。
+## Using existing functions
+
+If you want to test function calling by existing functions, here are the specific steps:
+
+### 1. Initialize the configuration
+Clone this project from Github to your local machine, then run ```npm install``` to install the necessary extensions.
+Next, copy the .env.example file into the .env file, which is used to store project-related API Keys, etc.
 ```
 cp .env.example .env
 ```
-你还可以将 EXPECTED_API_KEY 的值换成任何自定义的字符串，用来设置函数的访问权限，你需要将 EXPECTED_API_KEY 的值填写到ConsoleOne工作台的函数调用设置中的
+You can replace the value of EXPECTED_API_KEY in the .env file with any custom string to set function access permissions, then fill in the value of EXPECTED_API_KEY in the function call settings of the ConsoleOne workbench.
 
-### 2. 设置函数描述
-以实现获取天气信息的函数 getCurrentWeather.js 为例，首先将与getCurrentWeather函数相关的复制并粘贴到ConsoleOne工作台的函数调用设置中。
+If you do not wish to verify function access permissions via the API Key, set the EXPECTED_API_KEY value to empty.
 
-### 3. 发布函数
-要想快速使用一个函数，最简单的方式是将函数发布到Vercel上，以下是具体的流程：
+### 2. Setting up function description
+Using the getCurrentWeather.js function, which retrieves weather information, as an example, first copy and paste everything related to the getCurrentWeather function into the function call settings of the ConsoleOne Workbench.
 
-全局安装Vercel：
-```npm i -g vercel```
+### 3. Deploy functions via Vercel
+To quickly use an existing function, the easiest way is to deploy the function on Vercel. Here are the steps:
 
-首先在Vercel上创建用户，然后在项目根目录下初始化一个Vercel项目：
-```vercel```
-跟随向导一步步完成操作即可。
+If you have not installed Vercel, install it globally first:
+```
+npm i -g vercel
+```
 
-你可以先在本地搭建测试环境进行测试：
-```vercel dev```
-这将会在本地启动一个测试环境，并显示在终端上。我们以: http://localhost:3000 为例，这时你的函数调用路径就是：http://localhost:3000/api/
+Create a user on Vercel, then initialize a Vercel project in the root directory of the project:
+```
+vercel
+```
+Follow the guided steps to complete the setup.
 
-将该路径填写到ConsoleOne工作台的「函数调用路径」输入框中，然后打开「启用OpenAI函数调用」开关，并且在偏好设置中关闭「Steam模式」开关。（在stream模式下暂不能发起对外部函数的调用），你就可以通过对话测试函数调用是否生效。若生效，则在AI的回答下方会显示一个绿色信息框。像这样：
+You can first set up a test environment locally:
+```
+vercel dev
+```
+This will set up a local test environment and display it on the terminal. Our example is: http://localhost:3000 , so your function call path is: http://localhost:3000/api/
 
-下方的绿色信息框中将会给出本次交互中调用的函数，点击信息框还可以在弹出窗口内看到中间过程的详细信息。
+Enter this path in the "function calling path" input box on ConsoleOne, turn on the 'Enable OpenAI function calling' switch, and turn off the 'Stream mode' switch. (Calls to external functions cannot be initiated in stream mode) Now you can test whether the function calling is effective via ConsoleOne.
 
-在本地调试通过后，你可以通过```vercel --prod```将函数发布到互联网上。发布成功之后，你需要将ConsoleOne工作台中的函数调用路径更换成Vercel生产环境的域名，并且将.evn中用到的环境变量设置到Vercel项目的环境变量设置中。即可不依赖本地环境更方便的使用函数。
+You can ask the OpenAI's GPT model a question related to local weather:
+```
+What's the weather like in London today?
+```
+In most cases, OpenAI's GPT model will call the weather function getCurrentWeather to answer your question. If the function call works, a green message box will appear under the AI's answer. Clicking on the message box will open a pop-up window with detailed information about the function call process.
 
-3. 实现一个新函数
-你想写一个新函数来实现一个特定功能也很简单！你只需用javascript语言写出一个新的nodejs函数即可。
+Once local debugging is successful, you can release the function to the internet via:
+```
+vercel --prod
+```
+After successful release, you need to replace the function call path in the ConsoleOne Workbench with the domain name of the Vercel production environment and set the environment variables used in the .env file in the environment variable settings of the Vercel project. You can then call the function more conveniently without relying on the local environment.
 
-之后将函数放在 /API 目录下，然后将关于函数结构的描述放在 /function_description 目录的 function_desc.json 文件中。
+## Implementing a new function
+You can also easily write a new function to implement a specific functionality! You just need to write a new node.js function, put the function in the /API directory, set up the same on the ConsoleOne Workbench, then test and deploy the function.
 
-完成之后，像步骤2中一样进行测试和发布即可！
+Now, you can get creative and start implementing your own cloud functions! In fact, you can use cloud functions to create your own OpenAI "plug-in system" to make your work and life easier!
 
-现在，你可以打开脑洞，动手实现自己的云函数！
+## Contribute to the OpenFunction project
+Due to limited time and energy, I have only implemented two example functions, weather lookup and currency conversion. If you like the OpenFunction project and want to contribute, you can enrich the OpenFunction function library by putting your written function into the /API directory and placing the description of the function structure in the function_desc.json file in the /function_description directory, then initiate a pull request.
 
-如果你对本项目感兴趣，想要贡献自己的云函数，欢迎进入Discord服务器或微信群。
+If you're interested in this project, we also welcome you to [join our Discord server](https://discord.gg/JRcM2x4Rf) to discuss.
