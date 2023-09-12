@@ -1,6 +1,6 @@
 # Open-functions OpenAI开放函数项目
 
-[View English version introduction](README.md)
+[View English Version Introduction](README.md)
 
 ## 目标
 OpenAI 的 Function calling 为大语言模型能力的扩展提供了无限的可能，但由于Function calling的完整实现过程涉及到不止一次的模型调用，调试起来十分困难。
@@ -9,7 +9,7 @@ OpenAI 的 Function calling 为大语言模型能力的扩展提供了无限的�
 
 ## 使用现有的函数
 
-以下是具体步骤：
+使用一个现有的函数测试函数调用十分简单，以下是具体步骤：
 
 ### 1. 初始化配置
 从Github中将本项目克隆到本地，然后运行 ```npm install``` 安装必要的扩展。
