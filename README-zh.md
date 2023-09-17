@@ -1,4 +1,4 @@
-# Open-functions OpenAI开放函数项目
+# 开放函数项目 for OpenAI
 
 [View English Version Introduction](README.md)
 

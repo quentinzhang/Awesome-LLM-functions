@@ -42,5 +42,14 @@
             },
             "required": ["fromCurrency", "toCurrency"]
         }
+    },
+    {
+        "name": "getTopHackerNews",
+        "description": "Fetch the top 5 news articles from Hacker News",
+        "parameters": {
+          "type": "object",
+          "properties": {},
+          "required": []
+        }
     }
 ]
