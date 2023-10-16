@@ -1,11 +1,36 @@
-# 开放函数项目 for OpenAI
+# Awesome OpenAI functions
 
 [View English Version Introduction](README.md)
 
 ## 目标
-OpenAI 的 Function calling 为大语言模型能力的扩展提供了无限的可能，但由于Function calling的完整实现过程涉及到不止一次的模型调用，调试起来十分困难。
 
-这个项目旨在提供一个可供调用的实用函数集，让开发者可以通过最简便的方式，实现并部署自己的函数，并利用 [ConsoleOne AI 工作台](https://console.evalsone.com/) 调试函数调用效果。
+OpenAI的函数调用机制（Function calling）十分强大，但函数的开发和调试都比较麻烦，也缺少这方面的工具和资源。
+
+本项目旨在创建一个“开箱即用”的共享函数集，并提供一些函数开发相关的资源和技术框架，让开发者可以更容易地将外部函数与大语言模型的API集成起来，实现自己想要的功能。
+
+## 函数使用方法
+
+在函数列表中，点击进入函数的详情页并在其中复制函数的定义，就可以通过 [ConsoleOne AI 工作台](https://console.evalsone.com/)轻松测试函数的调用。
+
+## 函数列表
+
+* [天气查询](info/get_current_weather.md)
+* 汇率查询
+* 获取Hacker news最新内容
+* 生成MidJourney提示语
+* 快速获取视频内容摘要
+* 查询商品价格
+
+列表中的函数主要来源有：
+1. 由本项目的作者和参与者实现并共享
+2. 通过ChatGPT的Plugin配置转化生成（详见https://consolex.ai/plugins）
+
+## 开发函数
+开发函数有很多方法，可以使用Python、Nodejs、java、php等人和编程语言，这里收集一些快速开发函数的资源和方法。
+
+## 社区讨论
+如果你喜欢OpenFunction项目，并希望为它贡献一份力量，丰富OpenFunction的函数库，可以 [加入Discord服务器](https://discord.gg/JRcM2x4Rf) 一起讨论。
+
 
 ## 使用现有的函数
 
@@ -68,3 +93,5 @@ vercel --prod
 由于时间和精力有限，我目前只实现了查询天气和汇率转换两个示例函数。如果你喜欢OpenFunction项目，并希望为它贡献一份力量，丰富OpenFunction的函数库，你可以将你写好的函数放到 /API 目录下，并将关于函数结构的描述放在 /function_description 目录的 function_desc.json 文件中，然后发起一个pull request即可。
 
 如果你对本项目感兴趣，也欢迎 [加入Discord服务器](https://discord.gg/JRcM2x4Rf) 一起讨论。
+
+并利用 [ConsoleOne AI 工作台](https://console.evalsone.com/) 调试函数调用效果。
