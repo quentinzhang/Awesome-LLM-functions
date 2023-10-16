@@ -4,7 +4,7 @@
 
 ## 目标
 
-OpenAI的函数调用机制（Function calling）十分强大，但函数的开发和调试都比较麻烦，也缺少这方面的工具和资源。
+OpenAI的函数调用机制（Function calling）十分强大，但函数的开发和调试都比较麻烦，互联网也缺少这方面的工具和资源。
 
 本项目旨在创建一个“开箱即用”的共享函数集，并提供一些函数开发相关的资源和技术框架，让开发者可以更容易地将外部函数与大语言模型的API集成起来，实现自己想要的功能。
 
@@ -14,9 +14,10 @@ OpenAI的函数调用机制（Function calling）十分强大，但函数的开�
 
 ## 函数列表
 
-* [天气查询](info/get_current_weather.md)
-* 汇率查询
-* 获取Hacker news最新内容
+
+* [天气查询 (get_current_weather)](info/get_current_weather.md)
+* [汇率查询 (get_exchange_rate)](info/get_exchange_rate.md)
+* [获取Hacker news最新内容 (get_top_hacker_news)](info/get_top_hacker_news.md)
 * 生成MidJourney提示语
 * 快速获取视频内容摘要
 * 查询商品价格
