@@ -1,0 +1,55 @@
+[
+    {
+        "name": "getCurrentWeather",
+        "description": "Get the current weather in a given location by latitude and longitude",
+        "parameters": {
+            "type": "object",
+            "properties": {
+                "lat": {
+                    "type": "string",
+                    "description": "Latitude of the location"
+                },
+                "lon": {
+                    "type": "string",
+                    "description": "Longitude of the location"
+                },
+                "units": {
+                    "type": "string",
+                    "enum": ["standard", "imperial", "metric"]
+                }
+            },
+            "required": ["lat", "lon"]
+        }
+    },
+    {
+        "name": "getExchangeRate",
+        "description": "Convert currency from one type to another and get the exchange rate",
+        "parameters": {
+            "type": "object",
+            "properties": {
+                "fromCurrency": {
+                    "type": "string",
+                    "description": "The currency you want to convert from (ISO 4217 code)"
+                },
+                "toCurrency": {
+                    "type": "string",
+                    "description": "The currency you want to convert to (ISO 4217 code)"
+                },
+                "amount": {
+                    "type": "number",
+                    "description": "The amount you want to convert (optional)"
+                }
+            },
+            "required": ["fromCurrency", "toCurrency"]
+        }
+    },
+    {
+        "name": "getTopHackerNews",
+        "description": "Fetch the top 5 news articles from Hacker News",
+        "parameters": {
+          "type": "object",
+          "properties": {},
+          "required": []
+        }
+    }
+]
