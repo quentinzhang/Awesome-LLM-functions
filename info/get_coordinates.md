@@ -1,10 +1,9 @@
-# 获取地理位置坐标
+# Get Coordinates of Any Places
 
-## 功能目标
-根据地址获取经纬度和生成地图链接。
+## Function Objective
 Obtain latitude and longitude based on the address and generate map link.
 
-## 函数定义
+## Function Definition
 
 ```json
 {
@@ -31,8 +30,8 @@ Obtain latitude and longitude based on the address and generate map link.
 }
 ```
 
-## 问题示例
+## Sample Question
 ```
-请告诉我北京故宫的位置坐标
+Please tell me the coordinates of the Forbidden City in Beijing
 ```
 

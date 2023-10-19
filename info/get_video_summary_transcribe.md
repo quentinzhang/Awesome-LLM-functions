@@ -1,10 +1,9 @@
-# 生成Youtbue视频摘要
+# Youtube Video Summary Generator
 
-## 功能目标
-根据视频链接生成脚本摘要
-Summarize YouTube video highlights. Generate summaries from YouTube video URLs.
+## Function Objective
+Summarize video highlights from YouTube video URLs.
 
-## 函数定义
+## Function Definition
 
 ```json
 {
@@ -31,7 +30,7 @@ Summarize YouTube video highlights. Generate summaries from YouTube video URLs.
 }
 ```
 
-## 问题示例
+## Sample Question
 ```
 What is the following video talking about? 
 https://www.youtube.com/watch?v=iWT0kl1k32M

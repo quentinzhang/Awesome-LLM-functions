@@ -1,10 +1,9 @@
-# 天气查询
+# Weather inquiry
 
-## 功能目标
-根据经纬度获得特定地点当前的天气信息
+## Function Objective
 Get the current weather in a given location by latitude and longitude
 
-## 函数定义
+## Function Definition
 
 ```json
 {
@@ -35,12 +34,12 @@ Get the current weather in a given location by latitude and longitude
 }
 ```
 > **Note**
-> 相对于OpenAI官方查询天气的例子，使用经纬度作为参数可以有效减少由于地区名称不一致所带来的函数调用异常。大语言模型可以将问题中的地点转化为经纬度参数。
+> According to the official example of OpenAI, using latitude and longitude as parameters can effectively reduce the function call exception caused by inconsistent place names. The large language model can convert the location in the problem into a latitude and longitude parameter.
 
-## 问题示例
+## Sample Question
 ```
-今天伦敦的天气怎么样？
+What is London's weather like for today?
 ```
 
 > **Note**
-> 本函数通过使用的是openweathermap.org的免费API进行天气查询，如果超出API次数限制将会导致函数调用失败。
+> This function is using openweathermap.org's free API for weather inquiry，and maybe the API call will fail if the API call limit is exceeded.

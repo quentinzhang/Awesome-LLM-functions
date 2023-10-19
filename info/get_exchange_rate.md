@@ -1,10 +1,9 @@
-# 汇率查询
+# Exchange rate inquiry
 
-## 功能目标
-获取当时的实时货币汇率，以及根据汇率空进行货币转换计算
+## Function objective
 Convert currency from one type to another and get the exchange rate
 
-## 函数定义
+## Function definition
 
 ```json
 {
@@ -35,10 +34,10 @@ Convert currency from one type to another and get the exchange rate
     }
 ```
 
-## 问题示例
+## Sample Question
 ```
-100美元可以兑换多少英镑？
+how much is 100 dollars in pounds?
 ```
 
 > **Note**
-> 本函数通过使用的是exchangerate-api.com的免费API进行汇率查询，如果超出API次数限制将会导致函数调用失败。
+> This function is using exchangerate-api.com's free API for exchange rate inquiry，and maybe the API call will fail if the API call limit is exceeded.

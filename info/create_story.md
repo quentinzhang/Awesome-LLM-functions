@@ -1,10 +1,9 @@
-# 生成睡前故事
+# Bedtime Story Generator
 
-## 功能目标
-创建激发阅读热爱、激发创造力并培养重要生活技能的睡前故事。
+## Function Objective
 Create bedtime stories that instill a love for reading, spark creativity, and build important life skills.
 
-## 函数定义
+## Function Definition
 
 ```json
 {
@@ -33,8 +32,8 @@ Create bedtime stories that instill a love for reading, spark creativity, and bu
 }
 ```
 
-## 问题示例
+## Sample Question
 ```
-我想听关于勇气的睡前故事
+I want to hear a bedtime story about courage
 ```
 

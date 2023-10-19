@@ -1,15 +1,14 @@
-# 查找语言老师
+# Find Lauage Teachers
 
-## 功能目标
-与世界各地的导师进行个性化的1对1在线课程，提高您任何水平的语言学习。
+## Function Objective
 Elevate your language learning at any level with personalized 1-on-1 online lessons from tutors across the world.
 
-## 函数定义
+## Function Definition
 
 ```json
 {
   {
-    "name": "find_teachers",
+    "name": "find_language_teachers",
     "description": "Get the list of teachers, dirctly show teacher image user can see",
     "extraInfo": {
       "method": "get",
@@ -53,8 +52,8 @@ Elevate your language learning at any level with personalized 1-on-1 online less
 }
 ```
 
-## 问题示例
+## Sample Question
 ```
-我想学英式英语，请帮我找一个合适的英语老师
+I want to learn British English, please help me find a suitable English teacher
 ```
 
