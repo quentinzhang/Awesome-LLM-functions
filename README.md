@@ -20,7 +20,7 @@ Click on the following functions for details. Copy the function definition to ea
 * Inquire product prices
 
 > **Note**
-> Some of the above functions are generated through the [OpenAI Plugin Convertor](https://consolex.ai/plugins).
+> Some of the above functions are generated through the [Plug2Func](https://consolex.ai/plugins).
 
 ## Function Development
 * [OpenAI function boilerplate](https://github.com/quentinzhang/OpenAI-function-boilerplate/tree/main)

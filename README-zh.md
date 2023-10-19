@@ -16,11 +16,11 @@ OpenAI的函数调用机制（Function calling）十分强大，但函数的开�
 * [汇率查询 (get_exchange_rate)](info/get_exchange_rate.md)
 * [获取Hacker news最新内容 (get_top_hacker_news)](info/get_top_hacker_news.md)
 * 生成MidJourney提示语
-* 快速获取视频内容摘要
+* [快速获取视频内容摘要](info/get_video_summary_transcribe.md)
 * 查询商品价格
 
 > **Note**
-> 以上函数部分通过[OpenAI Plugin Convertor](https://consolex.ai/plugins)生成
+> 以上函数部分通过[Plug2Func](https://consolex.ai/plugins)生成
 
 ## 函数开发
 * [OpenAI function boilerplate](https://github.com/quentinzhang/OpenAI-function-boilerplate/tree/main)

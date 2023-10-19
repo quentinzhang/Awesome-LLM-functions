@@ -40,6 +40,5 @@ Convert currency from one type to another and get the exchange rate
 100美元可以兑换多少英镑？
 ```
 
-:::tip
-本函数通过使用的是exchangerate-api.com的免费API进行汇率查询，如果超出API次数限制将会导致函数调用失败。
-:::
+> **Note**
+> 本函数通过使用的是exchangerate-api.com的免费API进行汇率查询，如果超出API次数限制将会导致函数调用失败。
