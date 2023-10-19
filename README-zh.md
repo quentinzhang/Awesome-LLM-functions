@@ -18,6 +18,13 @@ OpenAI的函数调用机制（Function calling）十分强大，但函数的开�
 * 生成MidJourney提示语
 * [快速获取视频内容摘要](info/get_video_summary_transcribe.md)
 * 查询商品价格
+* [读取PDF文档信息 (get_read_url)](info/read_url.md)
+* [查找语言老师 (get_find_teachers)](info/find_teachers.md)
+* [获取地理位置坐标 (get_get_coordinates)](info/get_coordinates.md)
+* [睡前故事 (get_create_story)](info/create_story.md)
+
+
+
 
 > **Note**
 > 以上函数部分通过[Plug2Func](https://consolex.ai/plugins)生成

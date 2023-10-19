@@ -19,6 +19,7 @@ Click on the following functions for details. Copy the function definition to ea
 * Quickly obtain video content summaries
 * Inquire product prices
 
+
 > **Note**
 > Some of the above functions are generated through the [Plug2Func](https://consolex.ai/plugins).
 
