@@ -23,9 +23,6 @@ OpenAI的函数调用机制（Function calling）十分强大，但函数的开�
 * [获取地理位置坐标 (get_get_coordinates)](info/get_coordinates.md)
 * [睡前故事 (get_create_story)](info/create_story.md)
 
-
-
-
 > **Note**
 > 以上函数部分通过[Plug2Func](https://consolex.ai/plugins)生成
 
