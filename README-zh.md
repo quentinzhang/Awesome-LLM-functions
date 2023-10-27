@@ -20,11 +20,11 @@ OpenAI的函数调用机制（Function calling）十分强大，但函数的开�
 * 查询商品价格
 * [读取PDF文档信息 (get_read_url)](info/read_url.md)
 * [查找语言老师 (get_find_teachers)](info/find_teachers.md)
-* [获取地理位置坐标 (get_get_coordinates)](info/get_coordinates.md)
+* [获取地理位置坐标 (get_coordinates)](info/get_coordinates.md)
 * [睡前故事 (get_create_story)](info/create_story.md)
-
-
-
+* [生成二维码 (get_qr_code)](info/get_qr_code.md)
+* [获取个性化健身计划 (get_routines)](info/get_routines.md)
+* [获取个性化饮食计划 (get_meal_plan)](info/get_meal_plan.md)
 
 > **Note**
 > 以上函数部分通过[OpenAI Plugin Convertor](https://consolex.ai/plugins)生成
