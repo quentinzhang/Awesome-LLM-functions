@@ -1,4 +1,4 @@
-# Awesome OpenAI Functions
+# Awesome LLM Functions
 
 <!-- <p align="center"><small><b>English | <a href="README-zh.md">中文</a></b></small></p> -->
 
